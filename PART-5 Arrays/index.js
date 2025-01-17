@@ -84,3 +84,9 @@ console.log(arrayThree)
 console.log(arrayThree.splice(0,3))
 console.log(arrayThree)
 
+const pl = ["Java","Python","GoLang","JavaScript"]
+const numbers = [3,2,4,1,5,6]
+console.log(pl.join("_"))
+let number = numbers.sort()
+console.log(number)
+console.log(number.reverse())
