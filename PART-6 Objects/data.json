@@ -1,0 +1,11 @@
+{
+    "name" : "SUJIT",
+    "age" : 23,
+    "email" : "sujitsaran16@gmail.com",
+    "isSubscribe" : true,
+    "hobbies" : ["Reading","Running","Cooking"],
+    "address" : {
+        "city" : "Bhubaneswer",
+        "idk" : true
+    }
+}

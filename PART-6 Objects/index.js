@@ -38,3 +38,53 @@ console.log(car)
 // 5. New value to object
 car.wheels = 4
 console.log(car)
+
+// Object methods
+function greet(){
+    return `Hello, My name is ${personobject.name} & I am ${personobject.age} years old`
+}
+const personobject = {
+    name : "Sujit",
+    age : 24,
+    greet,
+}
+
+console.log(personobject.greet())
+
+const employee = {
+    name : "Sujit",
+    age : 23,
+    call : function(){
+        return `Hello, my name is ${employee.name} & I am ${employee.age} years old`
+    }
+}
+console.log(employee.call())
+
+// JSON in JavaScript
+/*
+JSON stands for Javascript object Notation and it is nothing more but it is just a lightweight data interchange format that is easy for humans to read and write and also for machine to parts and generate.
+
+So JSON is often used for like transmitter between servers and web applications as well as storing a configuration settings and data 
+
+in javascript JSON is represented as a string
+*/
+// Comments are not permitted in json
+
+const format = {
+    "name" : "SUJIT",
+    "age" : 23,
+    "email" : "sujitsaran16@gmail.com",
+    "isSubscribe" : true,
+    "hobbies" : ["Reading","Running","Cooking"],
+    "address" : {
+        "city" : "Bhubaneswer",
+        "idk" : true
+    }
+}
+console.log(format)
+// JSON.stringify()-: Convert javascript object to JSON format
+const jsonString = JSON.stringify(format)
+console.log(jsonString)
+// JSON.parse()-: Convert JSON format to javascript object
+const jsonParse = JSON.parse(jsonString)
+console.log(jsonParse)
